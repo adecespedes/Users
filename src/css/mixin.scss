@@ -1,0 +1,22 @@
+@mixin font-size($sizeValue: 1.6) {  
+  font-size: $sizeValue + rem;;
+}
+
+$header: #0a256a;
+$white: white;
+$black: black;
+$colorBtnAdd: green;
+$colorBtnDel: red;
+$btnDisableB: #cccccc;
+$bntDisableC: #666666;
+$borderDisable: #999999;
+$container: beige;
+$table-container:#6f6f84;
+$table-container-border: #b6b6bb;
+$table-container-hover: #e1e1e7;
+$table-container-btn: #2c2cfd;
+
+
+@import "Header";
+@import "Table";
+@import "ModalAdd";

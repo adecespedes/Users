@@ -1,0 +1,111 @@
+
+  .header {
+    background-color: $header;
+    opacity: 80%;
+    height: 70px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .manage {
+    color: $white;
+    float: left;
+    @include font-size(2);
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  }
+  
+  .buttons ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 15px;
+    align-items: baseline;
+  }
+  .buttons ul li {
+    display: inline-block;
+    margin: 0 5px;
+    align-items: baseline;
+  }
+  .buttons ul li button {
+    cursor: pointer;
+  }
+  
+  .btnDel:disabled,
+  .btnDel[disabled] {
+    border: 1px solid $borderDisable;
+    background-color: $btnDisableB;
+    color: $bntDisableC;
+  }
+  
+  .btnAdd {
+    height: 40px;
+    width: 222px;
+    color: $white;
+    background-color: $colorBtnAdd;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    @include font-size(0.9);
+    border-radius: 3px;
+  }
+  .btnDel {
+    height: 40px;
+    width: 117px;
+    color: $white;
+    background-color: $colorBtnDel;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    @include font-size(0.9);
+    border-radius: 3px;
+  }
+  
+  .ico {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    font-size: 20px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: $white;
+    margin-left: -30px;
+    margin-top: -2px;
+  }
+  
+  .icoDel {
+    color: $colorBtnDel;
+  }
+  .icoAdd {
+    color: $colorBtnAdd;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    background-color: $container;
+    border-radius: 3px;
+    padding: 1em;
+  }
+  .input-container input {
+    flex: 6;
+    padding: 0.5em;
+    margin-bottom: 1em;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+  }
+  .modal-default-button {
+    padding: 5px;
+  }
