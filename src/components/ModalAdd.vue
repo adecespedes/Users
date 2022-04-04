@@ -2,13 +2,13 @@
   <Transition>
     <div v-if="show" class="modal-mask">
       <div class="modal-wrapper">
-        <div class="modal-container">
+        <div class="modal-container" :style="styleContainer">
           <div class="modal-header">
-            <slot name="header">default header</slot>
+            <slot name="header"></slot>
           </div>
 
           <div class="modal-body">
-            <slot name="body">default body</slot>
+            <slot name="body"></slot>
           </div>
 
           <div class="modal-footer">
@@ -31,6 +31,10 @@ export default {
     show: {
       type: Boolean,
       default: false
+    },
+    styleContainer: {
+      type: String,
+      default: 'width: 550px;height: 510px;'
     }
   }
 }
@@ -54,9 +58,7 @@ export default {
   vertical-align: middle;
 }
 
-.modal-container {
-  width: 550px;
-  height: 510px;
+.modal-container {  
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #fff;
